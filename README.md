@@ -23,6 +23,8 @@ latest version: https://mvnrepository.com/artifact/io.github.moon-cn/commons-val
 
 #### 所有注解
 
+
+- CarDrivingLicence: 驾驶证
 - IdNum: 身份证
 - NotContainsChinese: 不包含汉字
 - StartWithLetter: 字母开头

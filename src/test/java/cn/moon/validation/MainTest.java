@@ -63,6 +63,10 @@ public class MainTest {
 
         Set<ConstraintViolation<User>> validate = validator.validate(user);
 
+        for (ConstraintViolation<User> v : validate) {
+            System.out.println(v);
+        }
+
         List<?> collect = validate.stream().map(v -> v.getConstraintDescriptor().getAnnotation().annotationType()).collect(Collectors.toList());
         return collect;
     }
