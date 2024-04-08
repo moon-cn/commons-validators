@@ -30,3 +30,9 @@ latest version: https://mvnrepository.com/artifact/io.github.moon-cn/commons-val
 - StartWithLetter: 字母开头
 - ChineseName: 中文姓名
 - CreditCode: 统一社会信用代码
+- General: 英文字母、数字和下划线
+- Hex: 16进制字符串
+- Ipv4: IP地址(v4)
+- Mobile: 手机号码
+- PlateNumber: 中国车牌号
+- ZipCode: 邮政编码（中国）

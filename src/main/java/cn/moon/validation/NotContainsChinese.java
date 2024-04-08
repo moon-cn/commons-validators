@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
  */
 @Target({ElementType.FIELD,ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = NotContainsChinese.NotContainsChineseValidator.class)
+@Constraint(validatedBy = NotContainsChinese.MyChineseValidator.class)
 public @interface NotContainsChinese {
 
     String message() default "不能包含中文字符";
@@ -23,7 +23,7 @@ public @interface NotContainsChinese {
 
     Class<? extends Payload>[] payload() default {};
 
-    class NotContainsChineseValidator implements ConstraintValidator<NotContainsChinese, String> {
+    class MyChineseValidator implements ConstraintValidator<NotContainsChinese, String> {
 
 
         @Override

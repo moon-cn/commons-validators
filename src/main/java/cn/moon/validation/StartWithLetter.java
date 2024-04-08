@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
  */
 @Target({ElementType.FIELD,ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = StartWithLetter.StartWithLetterValidator.class)
+@Constraint(validatedBy = StartWithLetter.MyValidator.class)
 public @interface StartWithLetter {
 
     String message() default "必须以字母开头";
@@ -25,7 +25,7 @@ public @interface StartWithLetter {
     Class<? extends Payload>[] payload() default {};
 
 
-    class StartWithLetterValidator implements ConstraintValidator<StartWithLetter, String> {
+    class MyValidator implements ConstraintValidator<StartWithLetter, String> {
 
 
             @Override
