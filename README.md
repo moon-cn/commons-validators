@@ -38,3 +38,6 @@ latest version: https://mvnrepository.com/artifact/io.github.moon-cn/commons-val
 - ZipCode: 邮政编码（中国）
 - ContainsChinese: 包含中文字符
 - Password: 密码
+- Date: 日期yyyy-MM-dd
+- YearMonth: 年月yyyy-MM
+- YearQuarter: 季度yyyy-Qx
