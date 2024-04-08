@@ -1,5 +1,5 @@
 # validators
-Java校验注解，包括常见的字符串、身份证、邮件、账号、密码等校验规则
+Java校验注解，项目中常用规则校验
 
 #### Where can I get the latest release?
 You can pull it from the central Maven repositories:
@@ -13,12 +13,16 @@ You can pull it from the central Maven repositories:
 latest version: https://mvnrepository.com/artifact/io.github.moon-cn/commons-validators
 
 
-#### How to Use
+#### 使用方式
 
 
 ```
-    @Validators.StartWithLetter
+    @StartWithLetter
     String name;
 ```
 
-#### APIs
+#### 所有注解
+
+- IdNum: 身份证
+- NotContainsChinese: 不包含汉字
+- StartWithLetter: 字母开头

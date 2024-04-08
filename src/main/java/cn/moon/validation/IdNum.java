@@ -8,12 +8,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 字母开头
+ * 身份证
  */
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = StartWithLetterValidator.class)
-public @interface StartWithLetter {
+public @interface IdNum {
 
     String message() default "{cn.moon.validation.Validators.StartWithLetter.message}";
 
