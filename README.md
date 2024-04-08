@@ -36,3 +36,5 @@ latest version: https://mvnrepository.com/artifact/io.github.moon-cn/commons-val
 - Mobile: 手机号码
 - PlateNumber: 中国车牌号
 - ZipCode: 邮政编码（中国）
+- ContainsChinese: 包含中文字符
+- Password: 密码
