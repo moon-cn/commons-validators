@@ -1,13 +1,17 @@
 package cn.moon.validation;
 
-import com.sun.istack.internal.NotNull;
-import lombok.Data;
 
-@Data
+import javax.validation.constraints.NotNull;
+
 public class User {
 
-    @NotNull
-    private String name;
-    
-    // 其他属性和方法...
+    @StartWithLetter(message = "必须以字母开头")
+    @NotNull(message = "名称不能为空")
+     String name;
+
+    @IdNum
+     String idNum;
+
+
+
 }

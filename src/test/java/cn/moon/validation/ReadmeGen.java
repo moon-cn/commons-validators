@@ -16,8 +16,6 @@ public class ReadmeGen {
     public static void main(String[] args) {
         File readme = new File("README.md");
 
-
-
         File java = new File("src/main/java/cn/moon/validation");
 
         File[] validators = java.listFiles(file -> file.isFile() && !file.getName().endsWith("Validator.java"));
@@ -31,9 +29,7 @@ public class ReadmeGen {
             apis.add("- " +name + ": " + getRemark(validator));
         }
 
-
         FileUtil.appendUtf8Lines(apis, readme);
-
     }
 
     // 获得注释
