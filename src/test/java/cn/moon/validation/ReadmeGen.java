@@ -15,8 +15,11 @@ public class ReadmeGen {
 
     public static void main(String[] args) {
         File readme = new File("README.md");
+        String readmeText = FileUtil.readUtf8String(readme);
 
         File java = new File("src/main/java/cn/moon/validation");
+
+
 
         File[] validators = java.listFiles(file -> file.isFile() && !file.getName().endsWith("Validator.java"));
 
@@ -26,7 +29,10 @@ public class ReadmeGen {
         for (File validator : validators) {
             String name = validator.getName();
             name = FileNameUtil.mainName(name);
-            apis.add("- " +name + ": " + getRemark(validator));
+            String line = "- " + name + ": " + getRemark(validator);
+            if(!readmeText.contains(line)){
+                apis.add(line);
+            }
         }
 
         FileUtil.appendUtf8Lines(apis, readme);

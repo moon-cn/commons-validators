@@ -28,3 +28,5 @@ latest version: https://mvnrepository.com/artifact/io.github.moon-cn/commons-val
 - IdNum: 身份证
 - NotContainsChinese: 不包含汉字
 - StartWithLetter: 字母开头
+- ChineseName: 中文姓名
+- CreditCode: 统一社会信用代码
